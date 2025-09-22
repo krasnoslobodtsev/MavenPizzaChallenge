@@ -1,5 +1,5 @@
 # Maven Pizza Challenge
-[Challenge source](https://mavenanalytics.io/challenges/maven-pizza-challenge)
+[Challenge source](https://mavenanalytics.io/challenges/maven-pizza-challenge) <br>
 The Dashboard can be accessed [here](https://app.powerbi.com/groups/me/reports/eb76e1b3-d6f3-4731-9b79-7b0ba61499e3/ed762c2b4b9a3593425b?experience=power-bi)
 # Case description
 Project Objective – Plato’s Pizza BI Challenge
