@@ -10,3 +10,23 @@ The analysis was designed to answer key business questions, including:
 - Menu performance – Which pizzas are the best and worst sellers?
 - Financial insights – What is the average order value?
 - Capacity utilization – How effectively is the restaurant using its seating capacity (15 tables, 60 seats total)?
+# About the Data Set
+A year's worth of sales from a fictitious pizza place, including the date and time of each order and the pizzas served, with additional details on the type, size, quantity, price, and ingredients.
+| Table              | Field              | Description                                                                                                                                  |
+| ------------------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **orders**         | order\_id          | Unique identifier for each order placed by a table.                                                                                          |
+|                    | date               | Date when the order was placed (entered into the system before cooking & serving).                                                           |
+|                    | time               | Time when the order was placed (entered into the system before cooking & serving).                                                           |
+| **order\_details** | order\_details\_id | Unique identifier for each pizza item within an order. (Pizzas of the same type and size are grouped in one row, with quantity incremented). |
+|                    | order\_id          | Foreign key linking order details to the main order record.                                                                                  |
+|                    | pizza\_id          | Foreign key linking to the specific pizza ordered (type and size).                                                                           |
+|                    | quantity           | Number of pizzas of the same type and size ordered.                                                                                          |
+| **pizzas**         | pizza\_id          | Unique identifier for each pizza (combination of type and size).                                                                             |
+|                    | pizza\_type\_id    | Foreign key linking each pizza to its broader pizza type.                                                                                    |
+|                    | size               | Pizza size (Small, Medium, Large, X Large, or XX Large).                                                                                     |
+|                    | price              | Price of the pizza in USD.                                                                                                                   |
+| **pizza\_types**   | pizza\_type\_id    | Unique identifier for each pizza type.                                                                                                       |
+|                    | name               | Name of the pizza as displayed on the menu.                                                                                                  |
+|                    | category           | Menu category the pizza belongs to (Classic, Chicken, Supreme, or Veggie).                                                                   |
+|                    | ingredients        | Comma-separated list of ingredients used in the pizza (all include Mozzarella Cheese, even if not explicitly listed).                        |
+
